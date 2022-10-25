@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+body {
+    font-family: "lexend deca", "big shoulders display", sans-serif;
+    margin: 0;
+    width: 	100%;
+    color: white;
+
+}
+h1 {
+    text-transform: uppercase;
+    font-family: "big shoulders display";
+    font-size: 2rem;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    padding: 2rem;
+    margin: auto;
+}
+p {
+    font-size: 0.8rem;
+    opacity:.6;
+    line-height: 1.8;
+}
+button {
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    padding: .8rem;
+    max-width: 50%;
+    margin-bottom: 1rem;
+}
+.sedan {
+    background-color:hsl(31, 77%, 52%) ;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;  
+}
+.suv {
+    background-color: hsl(184, 100%, 22%)
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.sedan button {
+    color:hsl(31, 77%, 52%)  ;
+}
+.suv button {
+    color:hsl(184, 100%, 22%)
+}
+.luxury button {
+    color:hsl(179, 100%, 13%)
+}
+.sedan button:hover {
+    background-color:hsl(31, 77%, 52%) ;
+}
+.suv button:hover {
+    background-color:hsl(184, 100%, 22%);
+}
+.luxury button:hover {
+    background-color:hsl(179, 100%, 13%) ;
+}
+button:hover {
+    border: 1px solid white;
+    color:white;
+}
+img {
+    max-width: 4rem;
+}
+footer{
+    position:absolute;
+    bottom: 0;
+}
+@media screen and (min-width:601px){
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main {
+        display: flex;
+        border-radius: .5rem;
+        overflow: hidden;
+    }
+    h1 {
+        margin-bottom: 0;
+    }
+    article {
+        max-width: 13.3rem;
+    }
+    .sedan,
+    .luxury {
+        border-radius:0;
+    }
+    p {
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+    }
+    p,
+    img,
+    h1 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    button {
+        margin-left: 1rem;
+    }
+
+}
